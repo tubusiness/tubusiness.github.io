@@ -1,0 +1,11 @@
+/* navbar */
+.img {
+  display: none;
+}
+/* project */
+.mini-content {
+  flex-direction: column;
+}
+.mini-content img {
+  width: 100%;
+}

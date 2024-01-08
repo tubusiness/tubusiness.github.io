@@ -1,0 +1,13 @@
+/* navbar */
+.img {
+  display: none;
+}
+#nav-bar .container {
+  flex-direction: column;
+}
+.navi {
+  padding: 10px 0px;
+}
+.navi a {
+  width: 100%;
+}

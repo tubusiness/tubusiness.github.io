@@ -1,0 +1,226 @@
+* {
+  margin: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background-color: rgb(238, 238, 238);
+  width: 100%;
+}
+
+section > .container {
+  width: 100%;
+
+  display: block;
+  height: 100%;
+  padding: 30px 0px;
+}
+h4 a {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+li a {
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+}
+i {
+  font-size: xx-large;
+  margin: 2px;
+}
+/* banner */
+#banner {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+#banner .banner-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #f7f7f7;
+  transform: translate(-50%, 0);
+}
+/* navbar */
+#nav-bar {
+  position: relative;
+  width: 100%;
+}
+#nav-bar .container {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 17%;
+}
+.img {
+  position: absolute;
+  top: -30%;
+}
+.img img {
+  border: 4px solid snow;
+  border-radius: 50%;
+}
+/* ABOUT */
+#about {
+  padding: 40px 0px 10px 0px;
+}
+#target,
+#personal-info {
+  padding: 40px 20px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+
+#target {
+  background-color: #979797;
+}
+#personal-info {
+  background-color: #666363;
+}
+/* an thong tin den khi submit */
+#personal-info .section-content {
+  display: none;
+}
+/* submit erro */
+#error-email {
+  color: orange;
+  font-weight: 700;
+}
+/* JOB-INFO */
+#job-info {
+  width: 100%;
+}
+
+.exp,
+.edu,
+.activity,
+.hobby,
+.lang,
+.skill {
+  border: #777 1px solid;
+  text-align: justify;
+}
+.blue {
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  width: 60px;
+  margin-right: 10px;
+}
+.grey {
+  background: #777;
+  display: inline-block;
+  height: 3px;
+  width: 60px;
+  margin-right: 10px;
+}
+.info-cont {
+  padding: 10px 20px;
+  position: relative;
+}
+.info-cont::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 1px;
+  border: 1px solid #199cdb;
+  background-color: #199cdb;
+  left: 10px;
+  top: 17px;
+}
+.info-title {
+  display: flex;
+}
+.info-title > h1 {
+  flex: 3;
+}
+.info-title > div {
+  flex: 1;
+}
+.hobby-item {
+  text-align: center;
+  padding-top: 40px;
+  padding-left: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+.hobby-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #199cdb;
+  border-radius: 50%;
+}
+.lang,
+.skill {
+  font-weight: bold;
+}
+.lan-cont {
+  margin: 10px;
+}
+.skill-cont {
+  margin: 10px;
+}
+.round-bor {
+  background-color: #199cdb;
+  font-style: italic;
+  color: white;
+  padding: 1px 1px;
+  border: 1px solid #199cdb;
+  border-radius: 25%;
+}
+/* CERTIFICATE */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.cer-img {
+  display: inline-block;
+  width: 100px;
+}
+.mini-content {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  border-bottom: 1px solid #d6c08d;
+}
+/* PROJECT */
+
+.web {
+  width: 100%;
+  border: 1px solid #777;
+  height: 100%;
+}
+.web > * {
+  border-top: 1px solid #969696;
+}
+.table {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.table > * {
+  border-top: 1px solid #969696;
+}
+/* footer */
+
+#footer-list > li {
+  height: 100%;
+  display: inline-block;
+}
+/* view more/less  */
+.hidden {
+  display: none;
+}

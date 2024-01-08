@@ -1,0 +1,94 @@
+/* Phần định dạng chung */
+* {
+  font-size: 1rem;
+  box-sizing: border-box;
+  text-align: justify;
+}
+h1 {
+  color: blue;
+  border-bottom: 1px solid #777;
+}
+h2,
+h5 {
+  font-weight: bold;
+}
+i {
+  font-size: xx-large;
+}
+.content {
+  background-color: aqua;
+}
+/* gạch chân */
+.bd-bot {
+  border-bottom: 0.5px dashed rgb(0, 90, 0);
+}
+/* bố cục trang bằng grid */
+.container {
+  display: grid;
+  grid-template-areas:
+    "goals goals team timeline"
+    "scopes scopes primary timeline";
+  gap: 10px;
+  background-color: blue;
+  padding: 10px;
+}
+.goals {
+  grid-area: goals;
+}
+.scopes {
+  grid-area: scopes;
+}
+.team {
+  grid-area: team;
+}
+.timeline {
+  grid-area: timeline;
+}
+.primary {
+  grid-area: primary;
+}
+/* bố cục sử dụng flex box */
+.fl-box {
+  display: flex;
+}
+.num {
+  flex: 1;
+  text-align: center;
+  align-self: center;
+  color: white;
+  font-weight: bold;
+  border: 1px solid white;
+  background-color: rgb(111, 155, 175);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.time-cont {
+  flex: 5;
+}
+.in,
+.out {
+  flex: 1;
+}
+/* ẩn các thông tin dự án ban đầu */
+.cv,
+.pet,
+.news {
+  display: none;
+}
+/* responsive cho charter */
+@media only screen and (max-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-areas: "goals" "scopes" "team" "primary" "timeline";
+  }
+  .fl-box {
+    flex-direction: column;
+  }
+  i {
+    text-align: center;
+  }
+  .num {
+    align-self: self-start;
+  }
+}
